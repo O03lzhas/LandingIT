@@ -1,0 +1,409 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination {
+  background-color: rgba(255, 255, 255, 0.103);
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.header .header--iner {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+  width: 1500px;
+  margin: 0px auto;
+}
+.header .header--iner .nav .nav--link {
+  display: inline-block;
+  margin-right: 20px;
+}
+.header .header--iner .nav .nav--link:last-child {
+  margin-right: 0;
+}
+.header .header--iner .nav .nav--link:hover {
+  color: #000;
+}
+
+.intro .intro--inner {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  width: 1500px;
+  margin: 0 auto;
+}
+.intro .intro--inner .intro--block {
+  width: 600px;
+  text-align: left;
+}
+.intro .intro--inner .intro--block h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+.intro .intro--inner .intro--block p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.intro .intro--inner .intro--block button {
+  width: 150px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: aqua;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.intro .intro--inner .intro--block button:hover {
+  transform: scale(1.1);
+}
+.intro .intro--inner .intro--block img {
+  width: 120%;
+  padding-top: 150px;
+  margin-right: 400px;
+}
+
+.why {
+  height: 800px;
+}
+.why .why--inner .why--inner__title {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.why .why--inner .why--inner__title h1 {
+  padding-top: 100px;
+}
+.why .why--inner .why--inner__title p {
+  padding-top: 20px;
+}
+.why .why--inner .why--inner__title .technologies {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px 80px 0px;
+  cursor: pointer;
+}
+.why .why--inner .why--inner__title .technologies .technologies--item {
+  font-size: 55px;
+  transition: 0.3s all;
+}
+.why .why--inner .why--inner__title .technologies .technologies--item:hover {
+  color: #999;
+  transform: scale(1.3);
+}
+.why .why--inner .why--block {
+  display: flex;
+  justify-content: space-around;
+}
+.why .why--inner .why--block .why--block--item {
+  text-align: center;
+  width: 350px;
+  transition: 0.2s all;
+  height: 270px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.why .why--inner .why--block .why--block--item:hover {
+  background-color: rgb(32, 32, 32);
+  transform: scale(1.1);
+}
+.why .why--inner .why--block .why--block--item div {
+  font-size: 110px;
+  color: rgb(107, 108, 109);
+}
+.why .why--inner .why--block .why--block--item h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(131, 132, 133);
+}
+.why .why--inner .why--block .why--block--item p {
+  color: rgb(131, 132, 133);
+}
+
+.stats {
+  background-color: rgb(97, 96, 96);
+  width: 100%;
+  height: 100vh;
+}
+.stats .stats--inner {
+  text-align: center;
+  color: #fff;
+}
+.stats .stats--inner .stats--top--text h1 {
+  font-size: 40px;
+  padding: 100px 0px 20px 0px;
+}
+.stats .stats--inner .stats--content {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.stats .stats--inner .stats--content .stats--img {
+  width: 60%;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.stats .stats--inner .stats--content .stats--img:hover {
+  transform: scale(1.1);
+}
+.stats .stats--inner .stats--content .stats--item {
+  list-style: none;
+  padding-top: 60px;
+}
+.stats .stats--inner .stats--content .stats--item li {
+  font-size: 18px;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.stats .stats--inner .stats--content .stats--item li:last-child {
+  margin-bottom: 0;
+}
+.stats .stats--inner .stats--content .stats--item li:hover {
+  transform: scale(1.1);
+}
+.stats .stats--inner .stats--content .stats--item li i {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.team {
+  height: 100vh;
+}
+.team .team--inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+.team .team--inner .team--title--text h1 {
+  font-size: 40px;
+  padding: 100px 0px 20px 0px;
+}
+.team .team--inner .team--title--text p {
+  font-size: 18px;
+}
+.team .team--inner .team--title--text .title--big--suptitle {
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+.team .team--inner .team--block {
+  display: flex;
+  justify-content: space-around;
+}
+.team .team--inner .team--block .team--item {
+  padding: 20px;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(153, 153, 153, 0.082);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.team .team--inner .team--block .team--item:hover {
+  transform: scale(1.1);
+}
+.team .team--inner .team--block .team--item div i {
+  font-size: 90px;
+  border: 4px solid #000;
+  padding: 50px 55px;
+  border-radius: 50%;
+}
+.team .team--inner .team--block .team--item h2 {
+  font-size: 24px;
+  color: rgb(29, 161, 117);
+  padding: 10px 0;
+}
+.team .team--inner .team--block .team--item p {
+  padding: 10px 0;
+}
+.team .team--inner .team--block .team--item a {
+  list-style: none;
+  color: #000;
+  font-size: 26px;
+  margin-right: 10px;
+  transition: 0.2s ease-in-out;
+}
+.team .team--inner .team--block .team--item a:last-child {
+  margin-right: 0px;
+}
+.team .team--inner .team--block .team--item a:hover {
+  color: #999;
+}
+.pricing .pricing--inner {
+  display: flex;
+  justify-content: space-around;
+}
+.pricing .pricing--inner .pricing--item {
+  border: 1px solid #000;
+  width: 250px;
+  height: 400px;
+  padding: 20px;
+}
+.pricing .pricing--inner .pricing--item .openpopup {
+  width: 100px;
+  padding: 10px 20px;
+  background-color: pink;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact {
+  background-color: rgb(90, 89, 89);
+  color: #fff;
+  height: 600px;
+}
+.contact .contact--inner .contact--title {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact .contact--inner .contact--title h1 {
+  font-size: 40px;
+  padding: 100px 0px 40px 0px;
+}
+.contact .contact--inner .contact--title .contact--btn {
+  margin: 120px 0px;
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(6, 160, 160);
+  font-size: 21px;
+  color: #fff;
+  cursor: pointer;
+}
+.contact .contact--inner .contact--title .contact--btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.contact .contact--inner .contact--title .footer {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 1860px) {
+  .header--iner {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    cursor: pointer;
+    width: 1200px;
+    margin: 0px auto;
+  }
+  .header--iner .nav .nav--link {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .header--iner .nav .nav--link:last-child {
+    margin-right: 0;
+  }
+  .header--iner .nav .nav--link:hover {
+    color: #000;
+  }
+  .intro--inner {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    width: 1500px;
+    margin: 0 auto;
+  }
+  .intro--inner .intro--block {
+    width: 600px;
+    text-align: left;
+  }
+  .intro--inner .intro--block h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+  .intro--inner .intro--block p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .intro--inner .intro--block button {
+    width: 150px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: aqua;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .intro--inner .intro--block button:hover {
+    transform: scale(1.1);
+  }
+  .intro--inner .intro--block img {
+    width: 120%;
+    padding-top: 150px;
+    margin-right: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
